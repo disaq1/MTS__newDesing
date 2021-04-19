@@ -1,9 +1,19 @@
-﻿.swiper-slide {
-    width: 400px;
-    height: 500px;
+﻿.swiper-slide--1 {
+    min-width: 200px;
+    width: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 500px;
 }
 
 .swiper-container {
-    max-width: 1000px;
-    padding: 0 20px;
+    min-width: 200px;
+    width: 100%;
+    min-width: 300px;
+    min-height: 200px;
+    height: 100%;
+    max-height: 500px;
+    margin: 0 40px;
+    padding: 0 40px;
 }
