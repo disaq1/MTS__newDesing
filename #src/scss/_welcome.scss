@@ -1,0 +1,25 @@
+﻿.welcome {
+    background-color: rgba($color: $blue, $alpha: 1);
+    width: 100%;
+    min-height: 100vh;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-container--1 {
+    box-sizing: border-box;
+    min-width: 100%;
+}
+
+.swiper-slide--1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 98px;
+}

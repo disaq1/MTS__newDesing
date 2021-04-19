@@ -1,0 +1,24 @@
+@import "mixins.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+
+@import "_containerInput";
+@import "_welcome";
+@import "_slider";
+@import "_card";
+@import "_header";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
