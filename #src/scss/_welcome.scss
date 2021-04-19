@@ -1,8 +1,7 @@
 ﻿.welcome {
-    background-color: rgba($color: $blue, $alpha: 1);
-    width: 100%;
+    background: linear-gradient(to bottom, red, rgba($color: $red, $alpha: 0.1));
+    max-width: 100%;
     min-height: 100vh;
-    
 
     display: flex;
     flex-direction: column;
@@ -12,7 +11,8 @@
 
 .swiper-container--1 {
     box-sizing: border-box;
-    min-width: 100%;
+    max-width: 100%;
+
 }
 
 .swiper-slide--1 {
@@ -20,6 +20,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: $trueWhite;
+    border-radius: 10px;
 
-    font-size: 98px;
+    font-size: 24px;
+}
+
+.swiper-slide__img {
+    min-width: 220px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 220px;
+    height: 100%;
+    max-height: 300px;
 }
