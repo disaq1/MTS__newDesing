@@ -1,14 +1,14 @@
 var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
+    grabCursor: false,
+    centeredSlides: false,
     slidesPerView: 'auto',
     coverflowEffect: {
-    rotate: 1,
+    rotate: 0,
     stretch: 0,
-    depth: 20,
+    depth: 1,
     modifier: 1,
-    slideShadows: true,
+    slideShadows: false,
     },
     pagination: {
     el: '.swiper-pagination',
