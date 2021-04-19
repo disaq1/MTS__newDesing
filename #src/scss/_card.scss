@@ -1,14 +1,20 @@
 ﻿.cards-wrapper {
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0 50px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 100vh;
 
     font-family: 'Poppins', sans-serif;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
 }
 
 .cards-wrapper1 {
@@ -27,7 +33,11 @@
 .cards-nav {
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 200px;
+    @media screen and (min-width:768px) {
+        height: 200px;
+        flex-direction: row;
+    }
 }
 
 .cards-nav__list {
@@ -65,7 +75,9 @@
 .card {
     position: relative;
     background: $trueWhite;
-    width: 400px;
+    max-width: 590px;
+    width: 100%;
+    min-width: 300px;
     height: 495px;
     margin: 0 auto;
     border-radius: 15px;
@@ -169,12 +181,13 @@
 .content__link {
     cursor: help;
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 5px;
     text-decoration: none;
     border: 2px solid $trueBlack;
     border-radius: 5px;
     color: $trueBlack;
     background: $trueWhite;
+    font-size: 0.97em;
     font-weight: 600;
 
     @include smooth;
@@ -220,4 +233,11 @@
     flex-direction: column;
     margin: 5px 10px;
     transition: 0.9s;
+}
+
+.partingWords {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.267);
 }
